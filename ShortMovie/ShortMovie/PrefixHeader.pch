@@ -1,0 +1,72 @@
+//
+//  PrefixHeader.pch
+//  ShortMovie
+//
+//  Created by MS on 16-5-31.
+//  Copyright (c) 2016年 MS. All rights reserved.
+//
+
+#ifndef ShortMovie_PrefixHeader_pch
+#define ShortMovie_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//三方库
+#import "MMProgressHUD.h"  // 提示框
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "MJRefresh.h"
+#import "SCNavTabBarController.h"
+#import "Reachability.h"
+#import "AJNotificationView.h"
+
+//自定义类
+#import "BaseHttpClient.h"
+
+
+//屏幕宽高
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+
+//网址
+
+//-----精选-----
+//动画  %d
+#define JX_DH @"http://apiv2.vmovier.com/api/post/getPostInCate?cateid=16&p=%d"
+//动作
+#define JX_DZ @"http://apiv2.vmovier.com/api/post/getPostInCate?cateid=10&p=%d"
+//明星
+#define JX_MX @"http://apiv2.vmovier.com/api/post/getPostInCate?cateid=19&p=%d"
+//配音
+#define JX_PY @"http://apiv2.vmovier.com/api/post/getPostInCate?cateid=44&p=%d"
+//MV
+#define JX_MV @"http://apiv2.vmovier.com/api/post/getPostInCate?cateid=18&p=%d"
+
+//描述详情 %d
+#define DES_DETAIL @"http://apiv2.vmovier.com/api/post/view?postid=%d"
+
+
+//-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif
